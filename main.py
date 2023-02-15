@@ -1,7 +1,7 @@
 import subprocess as sp
 from os import getcwd
 
-sp.run("adb.exe start-server", shell = True)
+sp.run("dependencies\\adb.exe start-server", shell = True)
 class CleanUp():
 
     title = 'Android Bloatware CleanUp'
@@ -17,10 +17,10 @@ class CleanUp():
     def retrieveApps(self):
         def run(command):
             return check_output(command).decode()
-        sp.run('adb.exe push "{}" /data/local/tmp'.format(getcwd() + "\\aapt-arm-pie"), shell = True)
-        sp.run("adb.exe shell chmod 0755 /data/local/tmp/aapt-arm-pie")
+        sp.run('dependencies\\adb.exe push "{}" /data/local/tmp'.format(getcwd() + "\\dependencies\\aapt-arm-pie"), shell = True)
+        sp.run("dependencies\\adb.exe shell chmod 0755 /data/local/tmp/aapt-arm-pie")
         
-        output = sp.run("adb.exe shell pm list packages -f", shell = True, capture_output = True).stdout.decode().split()
+        output = sp.run("dependencies\\adb.exe shell pm list packages -f", shell = True, capture_output = True).stdout.decode().split()
         for i in output:
             #address
             end = i.find(".apk")
@@ -29,7 +29,7 @@ class CleanUp():
             package = i[end + 5:]
             #name
             try:
-                info = sp.run("adb.exe shell /data/local/tmp/aapt-arm-pie d badging {}".format(address), shell = True, capture_output = True).stdout.decode()
+                info = sp.run("dependencies\\adb.exe shell /data/local/tmp/aapt-arm-pie d badging {}".format(address), shell = True, capture_output = True).stdout.decode()
                 start = info.find("application-label:") + 19
                 end = info.find("'", start)
                 name = info[start : end]
@@ -38,7 +38,7 @@ class CleanUp():
             except:
                 pass
             
-        sp.run("adb.exe shell rm /data/local/tmp/aapt-arm-pie", shell = True)
+        sp.run("dependencies\\adb.exe shell rm /data/local/tmp/aapt-arm-pie", shell = True)
 
     def main(self):
 
@@ -51,7 +51,7 @@ class CleanUp():
                 apkNames.remove('')
 
             for i in apkNames:
-                sp.run("adb.exe shell pm uninstall --user 0 " + i, shell = True)
+                sp.run("dependencies\\adb.exe shell pm uninstall --user 0 " + i, shell = True)
                 logLabel.config(text = "Done")
 
         def createSpace(name, apkName):
@@ -99,4 +99,4 @@ class CleanUp():
         window.mainloop()
 
 CleanUp()
-sp.run("adb.exe kill-server", shell = True)
+sp.run("dependencies\\adb.exe kill-server", shell = True)
