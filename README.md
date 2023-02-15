@@ -1,4 +1,4 @@
-# Android Bloatware Remover
+# Android Bloatware Cleaner
 
 > **to remove those non-uninstallable apps that cover your stunning home screen wallpaper of your low spec old phone**
 
