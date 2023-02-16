@@ -7,9 +7,10 @@
 ## Table Of Contents
 
 1. [Introduction](#what-is-android-bloatware-remover)
-2. [How to Use](#how-to-use)
-3. [Contribute](#contribute)
-4. [BackStory](#backstory)
+1. [How to Use](#how-to-use)
+1. [Limitations](#limitations)
+1. [Contribute](#contribute)
+1. [BackStory](#backstory)
 - - -
 
 ## What is Android Bloatware Remover
@@ -44,7 +45,15 @@ or download in *ZIP* format.
 
 6. Rest is ***intuitive***.
 
---------------------------------------
+- - -
+
+## Limitations
+
+1. Won't work on Samsung mobile devices protected by Knox Security.
+
+1. Delay in doing the 4th step of [How-To-Use](#how-to-use) will require restart of the app.
+
+- - -
 
 ## Contribute
 
