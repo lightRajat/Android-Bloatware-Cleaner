@@ -17,6 +17,8 @@
 
 **Bloatware** refers to those apps/softwares or services that comes preinstalled on a device and have no use to the user. These apps slow down the device and are impossible to remove by the end-user. **Ex -** Third-party browsers, app markets, payment apps, cloud services, mail services, accessibilities. This project is a python-based app which can remove all those storage taking apps and services by turning on USB-debugging on your phone and connecting via a USB-cable.
 
+![Application Interface](./res/images/app.png)
+
 This project uses `tkinter` module to create a **GUI** (Graphical User Interface). **ADB** (Android Debug Bridge) binary is used to connect to the android shell through a USB-cable and get access to the **PM** (Package Manager). **AAPT** (Android Asset Packagaing Tool) binary is then injected into a temporary root folder of the phone which then collects data about all the packages available on the device and sends back to the PC. All those packages are then listed alongside a checkbox. Unwanted apps can then be easily searched and checked. After clicking the `Clean` button, respected packages will be removed in a snap. It must be noted that removed apps/services can be restored either by manually installing it from digital markets or resetting your phone. After the closing of this app, the injected tool will automatically be deleted from the phone.
 
 - - -
