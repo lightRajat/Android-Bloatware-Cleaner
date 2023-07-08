@@ -1,0 +1,9 @@
+{
+    "name": "Android Bloatware Cleaner",
+    "dependencies": [
+        "aapt-arm-pie",
+        "adb.exe",
+        "AdbWinApi.dll",
+        "AdbWinUsbApi.dll"
+    ]
+}
