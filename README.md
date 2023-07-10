@@ -25,27 +25,15 @@ This project uses `tkinter` module to create a **GUI** (Graphical User Interface
 
 ## How to Use
 
-1. ***Download Python*** from its official [website](https://www.python.org/downloads/).
+1. **Extract** the ZIP file, downloadable from the [Releases](https://github.com/lightRajat/Android-Bloatware-Cleaner/releases/tag/v1.0) section or download directly by clicking [here](https://github.com/lightRajat/Android-Bloatware-Cleaner/releases/download/v1.0/Android-Bloatware-Cleaner.zip).
 
-![Download Page of Python](./res/python-website.png)
+1. ***Turn on USB-debugging*** on your phone by following simple steps from [here](https://developer.android.com/studio/debug/dev-options).
 
-and make sure that it is added to *PATH* while installation.
+1. ***Connect the android device with the PC*** via a USB-cable with *File-Sharing* mode and allow dubugging permissions when prompted on the android device.
 
-![Installer of Python](./res/python-installer.png)
+1. **Open the *ABC.exe*** and wait until the app collects data.
 
-2. ***Clone this project*** to your local machine.
-
-![Clone Command](./res/clone-command.png)
-
-or download in *ZIP* format.
-
-3. ***Turn on USB-debugging*** on your phone by following simple steps from [here](https://developer.android.com/studio/debug/dev-options)
-
-4. ***Connect the android device with the PC*** via a USB-cable and allow dubugging permissions when prompted on the android device.
-
-5. ***Open the `main.py`*** and wait until the app collects data and opens the GUI.
-
-6. Rest is ***intuitive***.
+1. Rest is **intuitive**.
 
 - - -
 
@@ -53,7 +41,9 @@ or download in *ZIP* format.
 
 1. Won't work on Samsung mobile devices protected by Knox Security.
 
-1. Delay in doing the 4th step of [How-To-Use](#how-to-use) will require restart of the app.
+1. Delay in granting debugging permissions in the 3rd step of [How-To-Use](#how-to-use) will require restart of the app.
+
+1. Proper scrolling requires the mouse to be over the scrollbar only.
 
 - - -
 

@@ -1,9 +1,18 @@
 {
     "name": "Android Bloatware Cleaner",
-    "dependencies": [
-        "aapt-arm-pie",
-        "adb.exe",
-        "AdbWinApi.dll",
-        "AdbWinUsbApi.dll"
-    ]
+    "dependencies": {
+        "python-modules": [
+            "threading",
+            "subprocess",
+            "os",
+            "tkinter",
+            "time"
+        ],
+        "external-tools": [
+            "aapt-arm-pie",
+            "adb.exe",
+            "AdbWinApi.dll",
+            "AdbWinUsbApi.dll"
+        ]
+    }
 }
