@@ -25,7 +25,7 @@ This project uses `tkinter` module to create a **GUI** (Graphical User Interface
 
 ## How to Use
 
-1. **Extract** the ZIP file, downloadable from the [Releases](https://github.com/lightRajat/Android-Bloatware-Cleaner/releases/tag/v1.0) section or download directly by clicking [here](https://github.com/lightRajat/Android-Bloatware-Cleaner/releases/download/v1.0/Android-Bloatware-Cleaner.zip).
+1. **Extract** the ZIP file, downloadable from the [Releases](https://github.com/lightRajat/Android-Bloatware-Cleaner/releases/tag/v1.0) section or download directly by clicking [here](https://github.com/lightRajat/Android-Bloatware-Cleaner/releases/download/v1.1/Android-Bloatware-Cleaner.zip).
 
 1. ***Turn on USB-debugging*** on your phone by following simple steps from [here](https://developer.android.com/studio/debug/dev-options).
 
